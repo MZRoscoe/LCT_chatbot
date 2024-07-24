@@ -3,18 +3,10 @@ import pandas as pd
 import os
 import plotly.express as px
 
-from langchain.document_loaders import TextLoader
 from langchain_experimental.agents.agent_toolkits import create_pandas_dataframe_agent
-from langchain.embeddings.openai import OpenAIEmbeddings
-from langchain.vectorstores import Chroma
-from langchain.chains import ConversationalRetrievalChain
-from langchain.prompts import PromptTemplate
 from langchain_google_genai import ChatGoogleGenerativeAI
 
-from langchain_community.llms import Ollama
-from langchain_community.embeddings.sentence_transformer import SentenceTransformerEmbeddings
 
-from langchain.chat_models import ChatOpenAI
 from langchain.agents import AgentType
 
 os.environ["GOOGLE_API_KEY"] = "AIzaSyDgec0Y__YGL5FEz7doYq9hlpIgRusq8Yg"
